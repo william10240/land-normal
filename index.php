@@ -6,7 +6,7 @@
  * Time: 17:44
  */
 $title = '登陆';
-require 'common.php';
+require 'common/common.php';
 ?>
     <style type="text/css">
         body { overflow: hidden; }
@@ -45,4 +45,4 @@ require 'common.php';
         });
     </script>
 
-<?PHP include 'common_footer.php'; ?>
+<?PHP include 'common/common_footer.php'; ?>

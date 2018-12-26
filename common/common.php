@@ -13,15 +13,14 @@ $php_Self = str_replace('.php', '', $php_Self);
 //  $_GET['d']  是否使用dist
 //  $_GET['h']  是否隐藏 testbar
 if (!empty($_GET['s'])) {
-    $resource = 'http://erp.suncoder.cn/resources/v1.0/dist';
+    $resource = 'resources';
 } else {
-    if (!isset($_GET['d'])) {
+    if (isset($_GET['d'])) {
         $resource = 'resources/v1.0/dist';
     } else {
         $resource = 'resources/v1.0/src';
     }
 }
-$resource = 'resources/v1.0/src';
 ?>
 
 <!DOCTYPE html>
@@ -33,18 +32,22 @@ $resource = 'resources/v1.0/src';
     <meta name="description" content="SunCoder http://www.suncoder.cn">
     <meta name="author" content="SunCoder http://www.suncoder.cn">
     <title><?PHP echo $title ?></title>
+    
     <?PHP if (!empty($_GET['s'])) { ?>
-<link href="http://erp.suncoder.cn/favicon.ico" type="image/x-icon" rel="icon"/>
-    <link href="http://erp.suncoder.cn/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+        <link href="favicon.ico" type="image/x-icon" rel="icon"/>
+        <link href="favicon.ico" type="image/x-icon" rel="shortcut icon"/>
     <?PHP } else { ?>
-<link href="favicon.ico" type="image/x-icon" rel="icon"/>
-    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+        <link href="favicon.ico" type="image/x-icon" rel="icon"/>
+        <link href="favicon.ico" type="image/x-icon" rel="shortcut icon"/>
     <?PHP } ?>
-<link href="<?PHP echo $resource; ?>/plugins/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    
+    <link href="<?PHP echo $resource; ?>/plugins/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="<?PHP echo $resource; ?>/plugins/dialog/dialog.css" rel="stylesheet">
+    
     <?PHP if (isset($_GET['d'])) { ?>
-<link href="<?PHP echo $resource; ?>/css/style.css" rel="stylesheet">
+        <link href="<?PHP echo $resource; ?>/css/style.css" rel="stylesheet">
     <?PHP } else { ?>
-<link rel="stylesheet" href="<?PHP echo $resource; ?>/css/1common.css">
+        <link href="<?PHP echo $resource; ?>/css/1common.css" rel="stylesheet">
         <link href="<?PHP echo $resource; ?>/css/2unit.css" rel="stylesheet">
         <link href="<?PHP echo $resource; ?>/css/3icos.css" rel="stylesheet">
         <link href="<?PHP echo $resource; ?>/css/4overwrite.css" rel="stylesheet">
@@ -52,10 +55,8 @@ $resource = 'resources/v1.0/src';
         <link href="<?PHP echo $resource; ?>/css/6other.css" rel="stylesheet">
         <link href="<?PHP echo $resource; ?>/css/webuploader_edit.css" rel="stylesheet">
     <?PHP } ?>
-<script src="<?PHP echo $resource; ?>/plugins/jquery.min.js" type="text/javascript"></script>
-<script src="<?PHP echo $resource; ?>/plugins/vue/vue_2.4.2.js" type="text/javascript"></script>
-<link rel="stylesheet" href="<?PHP echo $resource; ?>/plugins/dialog/dialog.css">
-<script src="<?PHP echo $resource; ?>/plugins/dialog/dialog.js"></script>
+    <script src="<?PHP echo $resource; ?>/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="<?PHP echo $resource; ?>/plugins/dialog/dialog.js" type="text/javascript"></script>
 
 </head>
 <body>
@@ -66,28 +67,55 @@ $resource = 'resources/v1.0/src';
         <!--测试条-->
         <button type="button" class="close" style="opacity: 1;color: #fff;" onclick="$('.testbar').remove();"><span>×</span></button>
         <style type="text/css">
-            .testbar { position: fixed; left: 0; top: 0; z-index: 1001; width: 100%; height: 70px; overflow: hidden; padding: 10px;
-                background-color: #6f5499; background-image: linear-gradient(to bottom, #563d7c 0, #6f5499 100%); }
-            .testbtns { display: block !important; }
-            .logo-bar { margin-top: 70px; }
-            .common-header { margin-top: 70px; }
-            .common-side { margin-top: 70px; }
-            .main { margin-top: 132px; }
-            .mainfull { margin-top: 133px; }
-        </style>
+            .testbar {
+                position: fixed;
+                left: 0;
+                top: 0;
+                z-index: 1001;
+                width: 100%;
+                height: 70px;
+                overflow: hidden;
+                padding: 10px;
+                background-color: #6f5499;
+                background-image: linear-gradient(to bottom, #563d7c 0, #6f5499 100%);
+            }
 
+            .testbtns {
+                display: block !important;
+            }
+
+            .logo-bar {
+                margin-top: 70px;
+            }
+
+            .common-header {
+                margin-top: 70px;
+            }
+
+            .common-side {
+                margin-top: 70px;
+            }
+
+            .main {
+                margin-top: 132px;
+            }
+
+            .mainfull {
+                margin-top: 133px;
+            }
+        </style>
+        
         <?PHP
         $urls = [
             'index' => '登陆页',
-            //'home' => '首页',
             't1' => '聚合页',
             't2' => '列表页',
-            't4' => '列表+二级菜单',
-            't1_1' => '详情页_单页',
-            't1_2' => '详情页_带菜单',
-            't2_1' => '编辑页',
+            't3' => '列表+二级菜单',
+            't4' => '详情页_单页',
+            't5' => '详情页_带菜单',
+            't6' => '编辑页',
         ];
-
+        
         foreach ($urls as $k => $v) {
             if (!isset($_GET['s'])) {
                 echo '<a type="button" class="btn ' . ($php_Self == $k ? 'btn-success' : 'btn-default') . '" href="' . $k . '.php' . ($_SERVER['QUERY_STRING'] ? ('?' . $_SERVER['QUERY_STRING']) : '') . '">';

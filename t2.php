@@ -6,9 +6,9 @@
  * Time: 18:21
  */
 $title = '列表页   ';
-require 'common.php';
-require 'common_header.php';
-require 'common_menu.php';
+require 'common/common.php';
+require 'common/common_header.php';
+require 'common/common_menu.php';
 ?>
     <style type="text/css">
     </style>
@@ -166,4 +166,5 @@ require 'common_menu.php';
             initInput();
         }
     </script>
-<?PHP include 'common_footer.php'; ?>
+
+<?PHP include 'common/common_footer.php'; ?>

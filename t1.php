@@ -6,9 +6,9 @@
  * Time: 17:39
  */
 $title = '聚合页';
-require 'common.php';
-require 'common_header.php';
-require 'common_menu.php';
+require 'common/common.php';
+require 'common/common_header.php';
+require 'common/common_menu.php';
 ?>
     <!--主体-->
     <div class="main">
@@ -119,4 +119,4 @@ require 'common_menu.php';
         </div>
     </div>
 
-<?PHP include 'common_footer.php'; ?>
+<?PHP include 'common/common_footer.php'; ?>

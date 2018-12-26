@@ -1,3 +1,5 @@
 .idea
 node_modules
 html
+resources/v1.0/dist
+package-lock.json

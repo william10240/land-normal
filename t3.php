@@ -16,7 +16,7 @@ require 'common/common_menu.php';
     </style>
     <div class="main">
         <div class="mainsub">
-            <?PHP include 'common_menu2.php'; ?>
+            <?PHP include 'common/common_menu2.php'; ?>
             <div>首页 > 运营管理 > 客服管理 > 信息管理</div>
             <div class="blockbox">
                 <div class="title yw mb20">
@@ -136,7 +136,7 @@ require 'common/common_menu.php';
                     <?PHP } ?>
                     </tbody>
                 </table>
-                <?PHP include 'common_page.php'; ?>
+                <?PHP include 'common/common_page.php'; ?>
             </div>
         </div>
     </div>
