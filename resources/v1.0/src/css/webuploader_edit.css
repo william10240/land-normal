@@ -1,0 +1,15 @@
+/*********************上传组件覆盖********************/
+.webuploader-container { position: relative; }
+.webuploader-element-invisible { position: absolute !important; clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ clip: rect(1px,1px,1px,1px); }
+.webuploader-pick { position: relative; display: block; text-align: center; overflow: hidden; cursor: pointer; }
+.webuploader-pick-hover { }
+.webuploader-pick-disable { opacity: 0.6; pointer-events:none; }
+.sc-progress {
+	display: inline-block;  width: 350px;  margin-left: 10px;  padding: 10px;
+	background-color: #F5F5F5;  border-radius: 3px;  font: 11px Verdana, Geneva, sans-serif;
+	color: #000;  text-align: left;  position: absolute;  z-index: 999;
+	top: -50%;  left: 100%;  cursor: default;  vertical-align: middle;  }
+.sc-progress .filename { width: 170px; text-overflow: clip; }
+.sc-progress .cancel a { float: right; height: 16px; text-indent: -9999px; width: 16px; background: url('../images/slice/webuploader cancel.png') 0 0 no-repeat; }
+.sc-progress-bar { background-color: #E5E5E5; margin-top: 10px; width: 100%; }
+.sc-progress-bar-in { background-color: #0099FF; height: 3px; width: 1px; }

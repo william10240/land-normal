@@ -1,0 +1,15 @@
+/*向下三角覆盖*/
+.caret.up { border-top: 0; border-bottom: 4px dashed; }
+/*tip插件覆盖*/
+.tooltip-arrow { border-top-color: #636979 !important; }
+.tooltip-inner { max-width: none; background-color: #636979; padding: 15px; box-shadow: 0 0 10px #C9CDD2; }
+.tooltip-inner td { text-align: left; padding-left: 15px; }
+/*dropdown覆盖*/
+.dropdown .btn { margin: 0; padding: 0; border: none; background: none; }
+.dropdown .btn:hover, .dropdown .btn:active, .dropdown .btn:focus { border: none !important; background: none !important; }
+/*dialog插件覆盖*/
+.ui-dialog-header { background-color: #ECEDF2 !important; border-radius: 6px 6px 0 0; }
+.ui-dialog-button { width: 100%; text-align: center; }
+.ui-dialog-button button + button { margin-left: 30px !important; }
+.ui-dialog-button button { width: 80px !important; height: 30px !important; line-height: 30px !important; border: 1px solid #999999 !important; border-radius: 2px !important; color: #999999 !important; padding: 0 !important; }
+.ui-dialog-button button.ui-dialog-autofocus { border: 1px solid #0195FF !important; background-color: #0195FF !important; color: #fff !important;; }

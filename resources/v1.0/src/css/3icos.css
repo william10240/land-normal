@@ -1,0 +1,69 @@
+/**0小图标**/
+.ico { display: inline-block; vertical-align: middle; }
+/**/
+.ico.jup { width: 13px; height: 15px; background: url('../images/slice/ico_jup.png') no-repeat; }
+.ico.jdw { width: 13px; height: 15px; background: url('../images/slice/ico_jdw.png') no-repeat; }
+/*banner_图标*/
+.ico.phon { width: 15px; height: 25px; background: url('../images/slice/header_phone.png'); display: inline-block; margin-right: 10px; }
+.ico.nbgl { width: 25px; height: 25px; background: url('../images/slice/header_nbgl.png') no-repeat; }
+.ico.zhgl { width: 25px; height: 25px; background: url('../images/slice/header_zhgl.png') no-repeat; }
+.ico.htmb { width: 25px; height: 25px; background: url('../images/slice/header_htmb.png') no-repeat; }
+.ico.bjkj { width: 25px; height: 25px; background: url('../images/slice/header_bjkj.png') no-repeat; }
+/*menu_图标*/
+.ico.head { width: 20px; height: 20px; background: url('../images/slice/menu_head.png') no-repeat; }
+.ico.home { width: 20px; height: 20px; background: url('../images/slice/menu_home.png') no-repeat; }
+.ico.lygl { width: 20px; height: 20px; background: url('../images/slice/menu_lygl.png') no-repeat; }
+.ico.zsgl { width: 20px; height: 20px; background: url('../images/slice/menu_zsgl.png') no-repeat; }
+.ico.zjgl { width: 20px; height: 20px; background: url('../images/slice/menu_zjgl.png') no-repeat; }
+.ico.zqgl { width: 20px; height: 20px; background: url('../images/slice/menu_zqgl.png') no-repeat; }
+.ico.tjfx { width: 20px; height: 20px; background: url('../images/slice/menu_tjfx.png') no-repeat; }
+.ico.right { width: 7px; height: 13px; background: url('../images/slice/menu_right.png') no-repeat; float: right; margin-top: 29px; margin-right: 10px; }
+.ico.up { width: 12px; height: 6px; background: url('../images/slice/menu_up.png') no-repeat; float: right; margin-top: 16px; margin-right: 15px; display: none; }
+.ico.dw { width: 12px; height: 6px; background: url('../images/slice/menu_dw.png') no-repeat; float: right; margin-top: 16px; margin-right: 15px; line-height: 41px; }
+/*页面内图标*/
+.ico.yw { width: 20px; height: 20px; background: url('../images/slice/title_yw.png') no-repeat; }
+.ico.lp { width: 20px; height: 20px; background: url('../images/slice/title_lp.png') no-repeat; }
+.ico.kj { width: 20px; height: 20px; background: url('../images/slice/title_kj.png') no-repeat; }
+.ico.xjkj { width: 13px; height: 13px; background: url('../images/slice/btn_xjkj.png') no-repeat; }
+.ico.xjlc { width: 14px; height: 14px; background: url('../images/slice/btn_xjlc.png') no-repeat; }
+.ico.xjfj { width: 14px; height: 14px; background: url('../images/slice/btn_xjfj.png') no-repeat; }
+.ico.kjsq { width: 12px; height: 12px; background: url('../images/slice/btn_kjbgsq.png') no-repeat; }
+.ico.kjgx { width: 15px; height: 15px; background: url('../images/slice/btn_kjgx.png') no-repeat; }
+.ico.fj { width: 14px; height: 14px; background: url('../images/slice/btn_fj.png') no-repeat; }
+.ico.fjsc { width: 14px; height: 14px; background: url('../images/slice/btn_fjsc.png') no-repeat; }
+.ico.zjfj { width: 12px; height: 12px; background: url('../images/slice/btn_zjfj.png') no-repeat; }
+/*登录页*/
+.ico_hint { width: 38px; height: 38px; background: url('../images/slice/ico_hint.png') no-repeat; }
+.ico_user { width: 38px; height: 38px; background: url('../images/slice/ico_user.png') no-repeat; }
+.ico_password { width: 38px; height: 38px; background: url('../images/slice/ico_password.png') no-repeat; }
+
+.ico_step { width: 36px; height: 36px; background: url('../images/slice/ico_unfinished.png') no-repeat; }
+.scstep .active .ico_step { width: 36px; height: 36px; background: url('../images/slice/ico_finished.png') no-repeat; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

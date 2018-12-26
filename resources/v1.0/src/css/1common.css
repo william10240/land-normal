@@ -1,0 +1,87 @@
+/*公共*/
+* { vertical-align: middle; }
+body { background-color: #F0F1F3; }
+a { font-size: 12px; color: #343434; text-decoration: none; cursor: pointer; }
+a.blue { color: #1589FF; }
+a:focus, a:hover { text-decoration: none; }
+ul { margin: 0; padding: 0; }
+li { list-style: none; }
+em, i { font-style: normal; }
+/*********************结构********************/
+.common-header { width: 100%; min-width: 1080px; padding: 0 15px; background-color: #fff; border-bottom: 1px solid #D9DADE;
+    position: fixed; z-index: 999; top: 0; left: 0; }
+.common-side { position: fixed; top: 62px; left: 0; width: 180px; height: 100%; overflow: hidden; overflow-y: auto; background: #2B2D31; z-index: 1000; }
+.main { min-width: 900px !important; margin-top: 63px; padding: 15px; margin-left: 180px; }
+.mainfull { min-width: 1080px !important; margin-top: 63px; padding: 15px; }
+.mainsub { margin-left: 120px; }
+/*********************头部********************/
+.common-header .logo { float: left; height: 100%; }
+.common-header .logo .tit { font-size: 16px; font-weight: bold; vertical-align: middle; }
+.common-header .user { float: right; }
+.user > div, .user > ul { float: left; border-left: 1px solid #E7E7E8; }
+.user .app > div:first-child { height: 62px; line-height: 62px; padding: 0 20px; }
+.user .app .caret { margin-left: 10px; }
+.user .app .qrcode { width: 100%; background-color: #fff; box-shadow: 0 0 10px 2px #DCDCE4; }
+.user .urls { border-left: 1px solid #E7E7E8; padding-left: 21px; }
+.user .urls a { display: inline-block; padding: 10px 21px 10px 0; text-align: center; }
+/**/
+.user .uinfo { border-left: 1px solid #E7E7E8; padding-left: 20px; padding-right: 2px; }
+.user .uinfo > li { float: left; height: 38px; line-height: 38px; margin: 12px 0; border: 1px solid #D7D6DB; border-right: none; }
+.user .uinfo > li a { display: block; }
+.user .uinfo .avatar img { vertical-align: top; }
+.user .uinfo .name > div:first-child { padding: 0 15px; }
+.user .uinfo .name .caret { margin-left: 20px; }
+.user .uinfo .set { border: 1px solid #D7D6DB; }
+.user .uinfo .set a { padding: 0 20px; }
+/*********************菜单********************/
+.mainsub .common-side { margin-left: 180px; background: #fff; width: 120px; border-right: 1px solid #d9dade; }
+.scnavsub { border-top: 1px solid #d9dade; }
+.scnavsub li > a { display: block; padding: 12px 0 12px 25px; }
+.scnavsub li:hover > a, .scnavsub li.active > a { padding-left: 20px; border-left: 5px solid #34A5FF; background-color: #E4E4E4; color: #34A5FF; }
+.scnavsub li.scnavsub-header { height: 70px; line-height: 70px; padding: 0; border-bottom: 1px solid #BCBCBC; text-align: center; }
+.scnav { }
+.scnav .active .up { display: inline-block; }
+.scnav .active .dw { display: none; }
+.scnav li a { display: block; line-height: 40px; background-color: #404558; border-bottom: 1px solid #4F5467; color: #ffffff; padding-left: 22px; }
+.scnav li a span { display: inline-block; line-height: 20px; margin-left: 20px; }
+.scnav li.scnav-header a { font-size: 16px; color: #c3a066; height: 70px; line-height: 70px; background-color: #242833; padding-left: 20px; }
+.scnav li .scnav-second-level { display: none; }
+.scnav li.active .scnav-second-level { display: block; }
+.scnav li .scnav-second-level a { background-color: #333949; border: none; }
+.scnav li .scnav-second-level a span { margin-left: 40px; }
+.scnav li a:hover, .scnav li .scnav-second-level a:hover { background-color: #33A5FE }
+.scnav li.scnav-header a:hover { background-color: #242833; }
+/*顶部tab*/
+.sctab { border-bottom: 1px solid #D3D3D5; }
+.sctab a, .sctab span { display: inline-block; padding: 0 15px; height: 40px; line-height: 40px; margin-right: 20px; font-size: 16px; font-weight: bold; text-align: center; }
+.sctab a.active, .sctab a:hover { color: #0097FE; border-bottom: 2px solid #2589FF; }
+/*附件*/
+.fujian { word-break: break-all; line-height: 30px; }
+.fujian span { display: inline-block; padding: 0 10px; border: 1px solid #DDDDDD; text-align: center; vertical-align: middle; overflow: hidden; }
+.fujian span.noborder { height: auto; line-height: normal; }
+.fujian a { color: #1589FF; margin: 0 5px; }
+/*下弹框*/
+.tip { position: relative; display: inline-block; font-size: 14px; cursor: pointer; }
+.tip:hover .btns { display: block; }
+.tip .btns { position: absolute; width: 100%; z-index: 9; display: none; border: 1px solid #DCDCE4; background-color: #fff; }
+.tip .btns a { display: block; height: 37px; line-height: 37px; text-align: center; }
+.tip .btns a:hover { background-color: #F5F6FA; }
+.tip .webuploader-container div { width: 100%; height: 100%; }
+/**/
+.tip.more .btns { width: auto; margin-left: -45px; }
+.tip.more .btns a { width: 108px; }
+/*.tip.name .btns { width: 100%; text-align: center; }*/
+/**/
+.form_box { }
+.form_row { line-height: 30px; margin-bottom: 10px; }
+.form_tit { line-height: 30px; float: left; color: #909090; width: 120px; padding-right: 9px; text-align: right; }
+.form_titr { float: right; }
+.form_line { display: block; padding: 10px 0 0; font-size: 16px; }
+.form_box .tips { color: #b2b2b2; display: block; }
+/**/
+.form_box.small .form_row { padding-bottom: 10px; }
+.form_box.small .form_tit { height: 25px; line-height: 25px; }
+.form_box.small .form_titr { float: right; height: 25px; line-height: 25px; }
+.form_box.small .form_cont { line-height: 25px; }
+.form_box.small .intxt, .form_box.small .insel { width: 110px; height: 25px; font-size: 12px; padding: 0 5px; }
+.form_box.small .intxt.m2 { }

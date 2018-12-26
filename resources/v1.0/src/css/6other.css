@@ -1,0 +1,10 @@
+/*********************楼宇管理_弹出框********************/
+.scpop { }
+.scpop .info { color: #7F8085; margin-bottom: 30px; }
+.scpop .info .num { color: #1B1B1B; margin-left: 20px; margin-right: 80px; }
+.scpop .info .area { color: #1B1B1B; margin-left: 20px; }
+.scpop .tit { font-size: 14px; font-weight: bold; margin-bottom: 5px; }
+.scpop .selnum { border: 1px solid #CCCDD2; border-radius: 4px; padding: 23px; padding-bottom: 18px; margin-bottom: 30px; }
+.scpop .cont { margin-bottom: 13px; }
+.scpop .form-control { display: inline-block; width: 180px; }
+.scpop .form-control.mr { margin-right: 40px; }

@@ -1,0 +1,33 @@
+{
+  "name": "land-normal",
+  "version": "1.0.0",
+  "description": "land",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamyan1024/land-normal.git"
+  },
+  "keywords": [
+    "land"
+  ],
+  "author": "WilliamYan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/williamyan1024/land-normal/issues"
+  },
+  "homepage": "https://github.com/williamyan1024/land-normal#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-css-sprite": "^0.2.2"
+  }
+}
