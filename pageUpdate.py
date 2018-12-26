@@ -9,9 +9,16 @@ from io import StringIO
 from urllib import request
 
 __author__ = 'SunCoder'
-# BASE_PATH = os.path.dirname(os.path.abspath(__file__))
-BASE_PATH = ".\\html"
+
 BASEURL = "http://127.0.0.1:82/"
+BASE_PATH = os.path.join(os.getcwd(), "html")
+RESOURCES = os.path.join(BASE_PATH, "resources")
+RESOURCES_BASE = os.path.join(os.getcwd(), "resources", "v1.0", "dist")
+
+print(BASEURL)
+print(BASE_PATH)
+print(RESOURCES)
+print(RESOURCES_BASE)
 ALLPAGE = {
     'index',
     't1',
@@ -60,10 +67,6 @@ def fsave(fname, data, isbyte=False):
 
 if __name__ == '__main__':
 
-    shutil.copy("favicon.ico", ".\\html")
-    shutil.rmtree(".\\html\\resources")
-    shutil.copytree(".\\resources\\v1.0\\dist", ".\\html\\resources")
-
     for url in ALLPAGE:
         name = url + '.html'
         print(' 开始更新：', name)
@@ -75,3 +78,9 @@ if __name__ == '__main__':
             print(' 更新完成：', name, '\r\n')
         else:
             print(' 更新失败：', name, '\r\n')
+
+    # 移动静态资源
+    shutil.copy("favicon.ico", BASE_PATH)
+    if(os.path.exists(RESOURCES)):
+        shutil.rmtree(RESOURCES)
+    shutil.copytree(RESOURCES_BASE, RESOURCES)

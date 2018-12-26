@@ -9,9 +9,9 @@ global $title;
 $php_Self = substr($_SERVER['PHP_SELF'], strripos($_SERVER['PHP_SELF'], "/") + 1);
 $php_Self = str_replace('.php', '', $php_Self);
 
-//  $_GET['s']  是否为静态页
-//  $_GET['d']  是否使用dist
 //  $_GET['h']  是否隐藏 testbar
+//  $_GET['d']  是否使用dist
+//  $_GET['s']  是否为静态页
 if (!empty($_GET['s'])) {
     $resource = 'resources';
 } else {
