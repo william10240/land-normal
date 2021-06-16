@@ -73,7 +73,7 @@ require 'common/common_menu.php';
                 <?PHP } ?>
                 </tbody>
             </table>
-            <?PHP include 'common_page.php'; ?>
+            <?PHP include 'common/common_page.php'; ?>
         </div>
     </div>
 

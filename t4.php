@@ -114,7 +114,7 @@ require 'common/common_header.php';
                             <td>房屋编号</td>
                         </tr>
                     </table>
-                    <?PHP include 'common_right1.php'; ?>
+                    <?PHP include 'common/common_right1.php'; ?>
                     <div class="bodybox">
                         <table class="body">
                             <?PHP for ($i = 1; $i < 15; $i++) { ?>

@@ -1,0 +1,22 @@
+
+version: '2'
+
+services:
+  ppp:
+    image: php:7.1.10-fpm
+    volumes:
+      - ./:/usr/share/nginx/html/
+    restart: always
+  ngx:
+    image: nginx:1.14.0-alpine
+    ports:
+      - 80:80
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+      - ./:/usr/share/nginx/html/
+    depends_on:
+      - ppp
+    restart: always
+
+#docker run -v /data/dc/nginx/conf.d/:/etc/nginx/conf.d -v /data/www:/usr/share/nginx/html/ -p80:80 -p81:81 -p28080:80 -p28081:81 -p443:443 --restart=always nginx:1.14.0
+
