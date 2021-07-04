@@ -16,7 +16,7 @@ services:
 
 
   ngx:
-    image: nginx:1.14.0-alpine
+    image: nginx:alpine
     container_name: land
     ports:
       - "0.0.0.0:27006:80"
