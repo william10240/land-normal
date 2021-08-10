@@ -19,7 +19,7 @@ services:
     image: nginx:alpine
     container_name: land
     ports:
-      - "0.0.0.0:27006:80"
+      - "0.0.0.0:27102:80"
     volumes:
       - ./default.conf:/etc/nginx/conf.d/default.conf
       - ./:/usr/share/nginx/html/
